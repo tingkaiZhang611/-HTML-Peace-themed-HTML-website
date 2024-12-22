@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>天科华·账号登录</title>
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/loginCSS.css">
+  <script src="../js/bootstrap.bundle.js"></script>
+</head>
+<!--魔怔的背景-->
+<body style="background-image: url(../images/login/backgrounds.png);
+background-size: cover;">
+
+<div id="backMask" style="padding-top: 12vh;">
+  <div class="container" id="mainStyle">
+
+    <div class="d-flex justify-content-center" style="width: 100%">
+      <img src="../images/login/logo.png" alt="logo" style="width: 25%;" class="align-content-center">
+    </div>
+
+    <p class="text-center" id="TITLE">天科华</p>
+
+    <form action="#" method="POST">
+      <div>
+        <label class="form-label mt-4">登录您的账号</label>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">电子邮箱账号</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password" autocomplete="off">
+          <label for="floatingPassword">密码</label>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 10px;">
+        <div class="col d-flex justify-content-between align-items-center">
+          <a href="#" style="text-decoration: none;">登录遇到其他问题?</a>
+          <a href="#" style="text-decoration: none;">忘记密码</a>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-outline-success w-100" style="border-radius: 20px;margin-top: 3vw;font-weight: bold">登录</button>
+      <hr style="margin: 10px">
+      <a class="btn btn-outline-danger w-100" style="border-radius: 20px;font-weight: bold" href="signin.html">注册</a>
+    </form>
+
+  </div>
+</div>
+
+
+
+</body>
+</html>

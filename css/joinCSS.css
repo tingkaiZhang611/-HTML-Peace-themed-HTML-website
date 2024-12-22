@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    height: 100%;
+    overflow-x: clip;
+}
+
+.breadcrumb{
+    margin: 80px 0 2vh 0;
+    background-color: #66CC00;
+}
+
+#MAIN{
+    background-image: url("../images/join/background.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin:1.5vw 0 6vw 0;
+    width: 100%;
+}
+
+#BigTITLE{
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: #29D000;
+    margin-bottom: 1em;
+}
+
+#BigTITLE span{
+    color: black;
+    margin: 0 0.5em 0 0.5em;
+}
+
+
+#BUTTONJOIN{
+    text-decoration: none;
+    font-weight: bold;
+    inline-size: auto;
+    background-color: #29D000;
+    color: white;
+    padding: 10px 25px 10px 25px;
+    border-radius: 25px;
+    text-align: center;
+    border: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease,color 0.3s ease,padding 0.3s ease;
+}
+
+#BUTTONJOIN:hover{
+    background-color: #FFF900;
+    color: black;
+    padding: 10px 35px 10px 35px;
+}
+
+#BODY{
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px 5vw 30px 5vw;
+    box-shadow: 0 0 18px 1rem rgb(204 204 204 / 25%);
+}
+
+.Component{
+    margin-bottom: 15px;
+}

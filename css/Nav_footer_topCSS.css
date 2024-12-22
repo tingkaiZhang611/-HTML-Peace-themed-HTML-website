@@ -1,0 +1,96 @@
+/*作为foot和nav和返回顶部的连接的通用CSS*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+#GoTop{
+    display: block;
+    background-image: url("../images/footer/TOPS.png");
+    border-radius: 50%;
+    height: 3vw;
+    width: 3vw;
+    margin: 0 2vw 2vw auto;
+    background-size: cover;/*缩放啊~*/
+    /*小动画逆天*/
+    opacity: 0; /*初始状态为完全透明*/
+    transition: opacity 0.3s ease;/*整点过渡可还行*/
+}
+
+.LIANJIE{
+    color:#d3d3d3;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.LIANJIE:hover{
+    color: #66CC00;
+}
+
+/*最后的班级声明*/
+#ENDS{
+    color:#aaaaaa;
+    text-align: center;
+    font-size: 14px;
+}
+
+/*那个关注俺们的图片*/
+.VDBIMAGE{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+#Searcher{
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+#LOGIN{
+    display: block;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    color: #fff672;
+    font-weight: bold;
+    padding: 8px 20px 3px 20px;
+    border-radius: 8px;
+    margin-left: 20px;
+    /*小渐变过渡*/
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#LOGIN:hover{
+    background-color: #fff672;
+    color: rgb(0, 0, 0);
+}
+
+.nav-link{
+    position: relative;/*埋伏他一手*/
+    transition: all 0.3s ease;/*渐变~*/
+}
+
+.nav-link::after {/*来根线兄弟们*/
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1vw;
+    height: 7px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    border-bottom: rgba(0, 0, 0, 0) solid 1px;
+}
+
+.nav-link:hover::after {
+    background-color: #fff672; /* 改变装饰线的颜色 */
+    border-bottom: rgba(0, 0, 0, 0.1) solid 1px;/*防止眼晕*/
+}
+
+.nav-link.active::after {
+    background-color: #fff672; /* 改变装饰线的颜色 */
+    border-bottom: rgba(0, 0, 0, 0.1) solid 1px;/*防止眼晕*/
+}

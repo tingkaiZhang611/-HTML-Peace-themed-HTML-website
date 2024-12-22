@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    background-color: #F3F3F3;
+    height: 100%;
+}
+
+body{
+    background-image: url("../images/sigin/sea.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+
+#container{
+    text-align: center;
+}
+
+span .XIEYITITLE{
+    font-weight: bold;
+}
+
+#closeButton,#continueButton{
+    border-radius: 20px;
+}
+
+#closeButton{
+    background-color: #E84C22;
+}
+
+#continueButton{
+    background-color: #00a8eb;
+}
+
+#TITLE{
+    font-weight: bolder;
+    color: black;
+    font-size: 1.5em;
+}
+
+#backMask{
+    background-color: rgba(0, 0, 0, 0.20);
+    width: 100%;
+    min-height: 100%;
+    padding-top: 15vh;
+}
+
+#mainStyle{
+    width: 40%;
+    height: 75vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 1vw;
+    overflow-y:scroll;
+}
+
+.Component{
+    margin-top: 2vh;
+}
+
+#subButton{
+    background-color: rgba(0,168,235,0.6);
+    border-radius: 25px;
+    border: none;
+    width: 100%;
+}
+
+#exampleTextarea{
+    height: 5vh;
+}

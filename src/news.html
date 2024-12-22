@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>天科华·新闻</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/newsCSS.css">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <!-- 通用CSS -->
+    <link rel="stylesheet" href="../css/Nav_footer_topCSS.css">
+    <!-- Bootstrap js -->
+    <script src="../js/bootstrap.bundle.js"></script>
+    <!-- 站底footerJS -->
+    <script type="text/javascript" src="../js/footerJS_2.js"></script>
+
+
+</head>
+<body>
+
+
+<!--顶部导航栏-->
+<nav class="navbar navbar-expand-lg bg-light fixed-top" data-bs-theme="light"  style="background-color: #66CC00!important;">
+    <div class="container-fluid">
+        <img src="../images/favicon.ico" alt="ICO" style="width: 50px;height: 50px;padding: 5px;">
+        <a class="navbar-brand" href="../index.html" style="font-weight: bold">天科华</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
+                aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">首页
+                        <span class="visually-hidden">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="../src/news.html">新闻</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../src/activity.html">志愿活动</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../src/about.html">关于我们</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../src/join.html">加入我们</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../src/partner.html">合作伙伴</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <label>
+                    <input class="form-control me-sm-2" type="search" placeholder="全站搜索"
+                           style="border-radius: 25px;">
+                </label>
+                <button class="btn btn-light my-2 my-sm-0" id="Searcher" type="submit">
+                    搜索
+                </button>
+                <a href="../src/login.html" id="LOGIN">登录</a>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+<form method="POST" action="#">
+    <div class="container">
+        <div class="row">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">首页</a></li>
+                <li class="breadcrumb-item active">新闻</li>
+            </ol>
+        </div>
+
+        <div class="row" id="SHAIXUAN">
+            <div class="col-3">
+                <label>发布时间</label>
+                <div id="DATE">
+                    <input type="date" name="data1">-<input type="date" name="data2">
+                </div>
+            </div>
+            <div class="col-3">
+                <label for="type" class="form-label">类型</label>
+                <select class="form-select" id="type" name="types">
+                    <option>全部</option>
+                    <option>人与森林和平</option>
+                    <option>人与海洋和平</option>
+                    <option>人与动物和平</option>
+                    <option>可持续发展</option>
+                    <option>志愿者服务</option>
+                </select>
+            </div>
+            <div class="col-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="GJZ" placeholder="关键字" name="GJZ">
+                    <label for="GJZ">关键词</label>
+                </div>
+            </div>
+            <div class="col-3 text-center">
+                <button type="submit" id="search"><span>搜索</span></button>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<!--底部内容-->
+<div class="container Component">
+<!--还能传递数据这么nb-->
+    <div class="row main" data-before-text="2024  12/01">
+        <div class="bodys d-flex align-items-start" onclick="goToNews()">
+            <div class="col-7 INLINE">
+                <h1>关于开展"万众一心洁深林"活动</h1>
+                <p>愣着干什么,行动起来!</p>
+                <p>#人与森林和平</p>
+            </div>
+            <div class="col-4 INLINE">
+                <img src="../images/news/senlin.jpg" alt="IMG">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container Component">
+    <div class="row main" data-before-text="2024  09/23">
+        <div class="bodys d-flex align-items-start">
+            <div class="col-7 INLINE">
+                <h1>"碧海蓝天"公益演讲公告</h1>
+                <p>大海:"你从我这里带走了则么多,帮我洗洗澡怎么了(嬉皮笑脸)"</p>
+                <p>#人与海洋和平</p>
+            </div>
+            <div class="col-4 INLINE">
+                <img src="../images/news/sea.jpg" alt="IMG">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container Component">
+    <div class="row main" data-before-text="2024  05/12">
+        <div class="bodys d-flex align-items-start">
+            <div class="col-7 INLINE">
+                <h1>"保护野生动物"知识宣传周</h1>
+                <p>你要对我干什么,朋友</p>
+                <p>#人与动物和平</p>
+            </div>
+            <div class="col-4 INLINE">
+                <img src="../images/news/Dongwu.jpg" alt="IMG">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container Component">
+    <div class="row main" data-before-text="2023  12/16">
+        <div class="bodys d-flex align-items-start">
+            <div class="col-7 INLINE">
+                <h1>关于开展"帮垃圾回家"志愿者活动</h1>
+                <p>助力每一个垃圾回家的梦想!</p>
+                <p>#志愿者服务</p>
+            </div>
+            <div class="col-4 INLINE">
+                <img src="../images/news/volunteer.jpg" alt="IMG">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container Component">
+    <div class="row main" data-before-text="2023  10/08">
+        <div class="bodys d-flex align-items-start">
+            <div class="col-7 INLINE">
+                <h1>关于"促进新能源转型"专题演讲</h1>
+                <p>怎么,你也想发电</p>
+                <p>#可持续发展</p>
+            </div>
+            <div class="col-4 INLINE">
+                <img src="../images/news/XinNengYuan.jpg" alt="IMG">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container" id="FANYE">
+    <div class="row justify-content-center">
+        <div class="col-8">
+            <div class="card text-white bg-danger mb-3">
+                <div class="card-header">emmm...再怎么看也木有辽...</div>
+                <div class="card-body">
+                    <h4 class="card-title">没有更多了</h4>
+                    <p class="card-text">就这个页面做了一上午可还行.这个动画是之前看到的忘了哪个网站有类似的,这次试着仿造了这么一下下,我可没找模板套啊,这个自己手写的</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-auto">
+            <ul class="pagination pagination-lg">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#">&laquo;</a>
+                </li>
+                <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">4</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">5</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">&raquo;</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<a href="#" class="fixed-bottom text-end" id="GoTop"></a>
+
+<!--牛马小站底-->
+<footer class="bg-dark text-white py-3 mt-auto">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- 版权信息 -->
+            <div class="col-12 text-center mb-3 fw-bold">
+                <p>&copy;2024 天科华</p>
+            </div>
+
+            <!-- 友情链接 -->
+            <div class="col-md-6 col-12 order-md-1 order-2">
+                <div class="mb-3">
+                    <p class="fw-bold">友情链接</p>
+                    <a href="https://www.ecjtuit.edu.cn/" class="d-block mb-1 LIANJIE">南昌交通学院</a>
+                    <a href="https://tsg.ncjti.edu.cn/" class="d-block mb-1 LIANJIE">南昌交通学院图书馆</a>
+                </div>
+            </div>
+
+            <!-- 关注我们 -->
+            <div class="col-md-6 col-12 order-md-2 order-1 text-md-end text-start">
+                <div>
+                    <p class="fw-bold">关注我们</p>
+                    <img id="footer_vx" class="VDBIMAGE" src="../images/footer/WeChat.png" alt="微信">
+                    <img id="footer_dy" class="VDBIMAGE" src="../images/footer/douyin.png" alt="抖音">
+                    <img id="footer_bz" class="VDBIMAGE" src="../images/footer/bilibili.png" alt="B站">
+                </div>
+            </div>
+
+            <div class="order-md-3 order-3 text-center fs-1">
+                <hr>
+                <h3 id="ENDS">AA版权所有AA</h3>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script>
+    //我得提醒提醒你
+    window.onload = function () {
+        alert("只有第一个新闻文章《关于开展\"万众一心洁深林\"活动》是可以点开的,其他的咱就不做了哈")
+    }
+
+    function goToNews(){
+        window.location.href='WenZhang.html';
+    }
+
+</script>
+
+
+</body>
+</html>

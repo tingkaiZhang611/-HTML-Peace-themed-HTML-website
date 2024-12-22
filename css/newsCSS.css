@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    background-color: #F3F3F3;
+    height: 100%;
+    /*把动画移动的卡片舍弃了,要不可恶的滚动条会出来QAQ*/
+    overflow-x: clip;
+}
+
+a{
+    text-decoration: none;
+}
+
+.breadcrumb{
+    --bs-breadcrumb-bg:#66CC00;
+    margin-top: 100px;
+}
+
+#GUANJIANZI{
+    resize: none;
+    height: 1.5vh;
+}
+
+#DATE{
+    margin-top: 18px;
+}
+
+#search::before{
+    content: "";
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    background-image: url("../images/news/search.png");
+    vertical-align: middle;
+}
+
+#search{
+    padding: 10px 30px 10px 30px;
+    background-color: #29d000;
+    border-radius: 30px;
+    color: white;
+    transition: color 0.3s ease,background-color 0.3s ease,padding 0.3s ease;
+    border: rgba(0, 0, 0, 0) solid 2px;
+    margin-top: 15px;
+}
+
+#search span{
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    height:100%;
+    margin-left: 5px;
+}
+#search:hover{
+    color: #000000;
+    background-color: #FFF900;
+    padding: 10px 60px 10px 60px;
+    border: black solid 2px;
+}
+
+#search:hover::before{
+    background-image: url("../images/news/search_black.png");
+}
+
+#GJZ{
+    margin-top: 18px;
+}
+
+#SHAIXUAN{
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .16);
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 10px 0 5px 0;
+    margin:10px 0 30px 0;
+}
+
+#SHAIXUAN input{
+    width: 45%;
+}
+
+/*分界线,下边是新闻修饰*/
+.INLINE{
+    display: inline-block;
+    margin-left: 3vw;
+}
+
+.INLINE img{
+    height: 30vh;/*天才配比,移动端适配这么恶心吗*/
+    background-size: cover;
+}
+
+.INLINE h1,.INLINE p{
+    margin-top: 3vh;
+}
+
+.main{
+    background-color: #000000;
+    /*绝对定位让before定位*/
+    /*怎么这么麻烦啊,愁死我了*/
+    position: relative;
+    box-shadow: rgba(255, 255, 255, 0) 0 0 10px 0;/*外发光激活效果~*/
+    overflow: clip;
+    transition: box-shadow 0.3s ease;
+}
+
+.main::before{
+    font-family: Bahnschrift,"微软雅黑 Light",serif;
+    content: attr(data-before-text);
+    display: inline-block;
+    font-size: 200%;
+    width: 3em;
+    text-align: center;
+    color: #FFF900;
+    position: absolute;
+    height: 100%;
+    top:30%;
+    left:1%;
+    line-height: 1em;
+}
+
+.bodys{
+    background-color: #ffffff;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .16);/*阴影*/
+    position: relative;
+    left:0;/*动画真麻烦,记到小本本上*/
+    transition: top 0.3s ease,left 0.3s ease;
+}
+
+.main:hover{
+    box-shadow:#29d000 0 0 10px 0;
+}
+
+.bodys:hover{
+    left: 7em;/*试了N种办法终于多端效果都ok的找到了,cao*/
+    color:#29d000;
+    cursor:pointer;
+}
+
+.Component{
+    margin-top: 5vh;
+}
+
+#FANYE{
+    margin-top: 5vh;
+}

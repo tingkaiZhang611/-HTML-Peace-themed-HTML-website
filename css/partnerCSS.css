@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    background-color: #F3F3F3;
+    height: 100%;
+}
+
+#bigTitle{
+    /*渐变小天才~*/
+    text-align: center;
+    background: linear-gradient(
+            to right,
+            #ED6419 39%,
+            #9629E7 47%,
+            #0860C7 70%
+    );
+    -webkit-background-clip: text;/*防止一手老东西不听话*/
+    background-clip: text;/*裁剪背景为文字,我了个文字蒙版啊*/
+    color: transparent;/*透明才能显示出来颜色*/
+    font-size: 2em;
+    font-weight: bold;
+    /*底部蓝色儿装饰线*/
+    display: inline-block;
+    border-bottom: #006efd solid 1vw;
+    margin-top: 5vh;
+}
+
+.titleBackground{/*卡片的背景渐变色*/
+    background: linear-gradient(to bottom right, #006fff, #00c4ff);
+    border-radius: 0 0 5px 5px;
+}
+
+.titles{
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+#CardBodys{
+    margin:5vh 0 5vh 0;
+}
+
+#BackGround{
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+}
+
+#BackGround img{
+    position: absolute;
+    top: 50%; /* 向下移动50% */
+    left: 0;
+    width: 100%;
+    height: 100vh; /* 确保图片足够高 */
+    object-fit: cover; /* 裁剪并保持宽高比 */
+    transform: translateY(-50%); /*向上移动50%底部对齐*/
+}
+
+#JOIN{
+    margin-top: 5vh;
+    border-radius: 30px;
+    padding: 15px 20px 15px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    background: linear-gradient(to bottom right, #006fff, #00c4ff);
+    border:none;
+    color: white;
+    transition: background-color 0.3s ease, color 0.4s ease,padding 0.4s ease;
+}
+
+#JOIN:hover{
+    background: linear-gradient(to bottom right,#00c4ff,#006fff);
+    color: #3e3e3e;
+    padding: 15px 60px 15px 60px;
+}

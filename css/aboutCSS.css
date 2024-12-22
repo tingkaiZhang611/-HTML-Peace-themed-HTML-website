@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    height: 100%;
+    overflow-x: clip;
+    background-image: url("../images/background_image/bird.png");
+    background-repeat: repeat;
+}
+
+.breadcrumb{
+    margin: 110px 0 2vh 0;
+    background-color: #00a8eb;
+}
+
+.bg-light{
+    background-color: rgba(0, 0, 0, 0)!important;
+}
+
+/* 自定义颜色 */
+:root {
+    --primary-color: #00A8EB;
+    --secondary-color: #29D000;
+    --accent-color: #FFF900;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: darken(var(--primary-color), 10%);
+    border-color: darken(var(--primary-color), 10%);
+}
+
+.text-secondary {
+    color: var(--secondary-color) !important;
+}
+
+.btn-success {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-success:hover {
+    background-color: darken(var(--secondary-color), 10%);
+    border-color: darken(var(--secondary-color), 10%);
+}
+
+
+#BUTTONJOIN{
+    text-decoration: none;
+    font-size: 1.5vw;
+    inline-size: auto;
+    background-color: #29D000;
+    color: white;
+    padding: 10px 25px 10px 25px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease,color 0.3s ease,padding 0.3s ease;
+}
+
+#BUTTONJOIN:hover{
+    background-color: #FFF900;
+    color: black;
+    padding: 10px 35px 10px 35px;
+}
+
+section{
+    margin: 50px 0 100px 0;
+}

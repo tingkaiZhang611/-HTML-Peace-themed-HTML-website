@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    background-color: #ededed;
+    height: 100%;
+    overflow-x: clip;
+    background-image: url("../images/background_image/fish.png");
+    background-repeat: repeat;
+}
+
+#Bodys{
+    margin-top: 8vh;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+#Bodys::after{
+    content: "";
+    display: block;
+    width: 105vw;
+    height: 50vh;
+    background-image: url("../images/activity/JiangTun.jpeg");
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#Mask{
+    height: 100%;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#BIGTITLE{
+    font-family: 微软雅黑,宋体,sans-serif;
+    font-size: 7vh;
+    font-weight: bold;
+    color: white;
+}
+
+#TITLE{
+    margin-top: 3vh;
+    font-size: 3vh;
+    font-weight: bold;
+    color: #FFF900;
+}
+
+#BAOMING{
+    margin-top: 3vh;
+    padding:2vh 5vw 2vh 5vw;
+    border:none;
+    border-radius: 50px;
+    font-weight: bold;
+    color: white;
+    background-color: #29D000;
+    font-size: 2.5vh;
+    transition: padding 0.3s ease,color 0.3s ease,background-color 0.3s ease,font-size 0.3s ease;
+}
+
+#BAOMING:hover{
+    background-color: #FFF900;
+    color: black;
+    padding: 3vh 8vw 3vh 8vw;
+    font-size: 3.5vh;
+}
+
+#XIANGQING{
+    border-radius: 25px;
+    margin:2.5vh 0 5vh 0;
+    padding: 2.5vh;
+    background-color: #f3f3f3;
+    white-space: pre-line;
+    color: black;
+    border: 10px solid #e2d4ff;
+}
+#XIANGQING h2{
+    color: #6C3EFF!important;
+    font-weight: bold;
+}
+
+#XIANGQING:not(h1,h5){
+    text-indent: -2em;
+}
+
+#XIANGQING h2,#XIANGQING h5{
+    color: black;
+}
+
+.breadcrumb{
+    background-color: #00A8EB;
+    margin-top: 2.5vh;
+}

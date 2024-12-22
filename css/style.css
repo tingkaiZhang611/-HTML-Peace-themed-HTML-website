@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100%;
+    overflow-x: clip;
+    background-image: url("../images/background_image/tree.png");
+    background-repeat: repeat;
+}
+
+a{
+    text-decoration: none;
+}
+
+#VIDEO {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 确保视频覆盖整个容器 */
+}
+
+#BIGTITLE {
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+#titleBody{
+    font-size: 4.5vw;
+    color: white;
+    font-weight: bold;
+}
+
+#smalltitleBody{
+    font-size: 2.5vw;
+    color: #29D000;
+    font-weight: bold;
+}
+
+#TOPCONTAINER{
+    width: 102vw;
+    margin-left: -2vw;
+}
+
+.carousel-item img{
+    width: 130%;
+}
+
+.LINKED{
+    height: 250px;
+    padding: 30px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .16);
+    border-radius: 25px;
+    position: relative;
+    overflow: clip;
+    margin-left: 5vw;
+    transition: border 0.3s ease;
+}
+
+.LINKED::before{
+    content: "";
+    display: block;
+    width: 120%;
+    height: 28%;
+    background-color: #29D000;
+    padding: 10px;
+    position: absolute;
+    top:0;
+    left: -3vw;
+    z-index: -1;
+    transition: background-color 0.3s ease,box-shadow 0.3s ease;
+}
+
+.LINKED:hover{
+    box-shadow: 0 3px 20px rgb(255 149 108)
+}
+
+.LINKED:hover::before{
+    background-color: #FFF900;
+}
+
+.LINKED p{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    inline-size: auto;
+}
+
+.LINKED:hover p{
+    color: #000000;
+}
+
+.LINKED a{
+    font-weight: bold;
+    font-size: 1.5vw;
+    inline-size: auto;
+    background-color: #FFF900;
+    color: black;
+    padding: 5px 25px 5px 25px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease,color 0.3s ease,padding 0.3s ease;
+}
+
+.LINKED a:hover{
+    background-color: #29D000;
+    color: white;
+    padding: 5px 35px 5px 35px;
+}
+
+.BODYTITLE{
+    font-weight: bold;
+    color: #000000;
+    position: relative;
+    z-index: 1;
+    margin: 200px 0 60px 0;
+}
+
+.BODYTITLE::before{
+    align-self: center;
+    content: "";
+    width: 100%;
+    height: 0.6em;
+    background-color: #66CC00;
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    z-index: -1;
+}

@@ -5,7 +5,9 @@
 #注意事项
 
 本项目虽然开源,但是站点中的“天科华”字样组织名称与天科华logo版权均为仓库所有者所有。
+本文章、项目与“南昌交通学院”无关，仅仅结课链接插入。你可以在项目中将它们替换为其他任意项目来合法的使用。
 Although this project is open source, the organization name and logo copyright of "Tiankehua" on the site belong to the warehouse owner.
+This article and project are not related to "Nanchang Jiaotong University", only the completion link is inserted. You can replace them with any other project in the project to legally use them.
 
 #提示
 
